@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ShoppingCart, Phone, Mail } from "lucide-react";
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,36 +42,21 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-0 ml-4 mr-30 gap-12">
-            <a
-              href="/"
-              className="px-3 py-3 text-xl font-semibold text-gray-800 hover:text-yellow-600 hover:bg-green-50 transition-colors"
-            >
+            <Link to="/" className="px-3 py-3 text-xl font-semibold text-gray-800 hover:text-yellow-600 hover:bg-green-50 transition-colors">
               Home
-            </a>
-            <a
-              href="/about-us"
-              className="px-3 py-3 text-xl font-semibold text-gray-800 hover:text-yellow-600 hover:bg-green-50 transition-colors"
-            >
+            </Link>
+            <Link to="/about-us" className="px-3 py-3 text-xl font-semibold text-gray-800 hover:text-yellow-600 hover:bg-green-50 transition-colors">
               About
-            </a>
-            <a
-              href="/product"
-              className="px-3 py-3 text-xl font-semibold text-gray-800 hover:text-yellow-600 hover:bg-green-50 transition-colors"
-            >
+            </Link>
+            <Link to="/product" className="px-3 py-3 text-xl font-semibold text-gray-800 hover:text-yellow-600 hover:bg-green-50 transition-colors">
               Products
-            </a>
-            <a
-              href="/faq"
-              className="px-3 py-3 text-xl font-semibold text-gray-800 hover:text-yellow-600 hover:bg-green-50 transition-colors"
-            >
+            </Link>
+            <Link to="/faq" className="px-3 py-3 text-xl font-semibold text-gray-800 hover:text-yellow-600 hover:bg-green-50 transition-colors">
               FAQ
-            </a>
-            <a
-              href="/contact"
-              className="px-3 py-3 text-xl font-semibold text-gray-800 hover:text-yellow-600 hover:bg-green-50 transition-colors"
-            >
+            </Link>
+            <Link to="/contact" className="px-3 py-3 text-xl font-semibold text-gray-800 hover:text-yellow-600 hover:bg-green-50 transition-colors">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -88,9 +74,8 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-white shadow-lg ${
-          isOpen ? "block" : "hidden"
-        }`}
+        className={`md:hidden bg-white shadow-lg ${isOpen ? "block" : "hidden"
+          }`}
       >
         <nav className="px-4 py-3 space-y-1">
           <a
