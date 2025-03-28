@@ -1,0 +1,28 @@
+/* Font family classes */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-opensans {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Optional: Create some utility classes */
+  .text-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+  
+  .text-body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  }
+  
+  .text-accent {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
