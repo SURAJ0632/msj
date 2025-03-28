@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import GaramMasala from "../assets/packets/11.png";
 import SambharMasala from "../assets/packets/12.png";
 import Biriyani from "../assets/packets/8.png";
@@ -153,11 +154,11 @@ export default function Products() {
             <p className="text-green-900/90 mb-8 max-w-2xl mx-auto">
               We offer custom packaging solutions from 1gm to 10kg bulk orders
             </p>
-            <a href="/contact">
+            <Link to="/contact">
               <button className="bg-green-900 text-white hover:bg-green-800 font-semibold px-8 py-3 rounded-full shadow-lg transition-all duration-300 border border-yellow-400">
                 Request Custom Packaging
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

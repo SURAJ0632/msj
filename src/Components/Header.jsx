@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ShoppingCart, Phone, Mail } from "lucide-react";
 import Logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,10 +35,10 @@ export default function Header() {
         {/* Main Header */}
         <div className="px-4 py-2 flex justify-between items-center bg-white ">
           {/* Logo */}
-          <a href="/" className="flex items-center group">
+          <Link to="/" className="flex items-center group">
             <img src={Logo} alt="MSJ Masale Logo" className="h-20 w-auto" />
             <p className="text-yellow-500 ml-2 text-4xl font-bold ml-8">masale | spices</p>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-0 ml-4 mr-30 gap-12">
@@ -74,45 +74,46 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-white shadow-lg ${isOpen ? "block" : "hidden"
-          }`}
+        className={`md:hidden bg-white shadow-lg ${
+          isOpen ? "block" : "hidden"
+        }`}
       >
         <nav className="px-4 py-3 space-y-1">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="block px-4 py-4 text-lg font-semibold text-gray-800 hover:bg-green-50 border-b border-gray-100"
             onClick={() => setIsOpen(false)}
           >
             Home
-          </a>
-          <a
-            href="/about-us"
+          </Link>
+          <Link
+            to="/about-us"
             className="block px-4 py-4 text-lg font-semibold text-gray-800 hover:bg-green-50 border-b border-gray-100"
             onClick={() => setIsOpen(false)}
           >
             About Us
-          </a>
-          <a
-            href="/product"
+          </Link>
+          <Link
+            to="/product"
             className="block px-4 py-4 text-lg font-semibold text-gray-800 hover:bg-green-50 border-b border-gray-100"
             onClick={() => setIsOpen(false)}
           >
             Products
-          </a>
-          <a
-            href="/faq"
+          </Link>
+          <Link
+            to="/faq"
             className="block px-4 py-4 text-lg font-semibold text-gray-800 hover:bg-green-50 border-b border-gray-100"
             onClick={() => setIsOpen(false)}
           >
             FAQ
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className="block px-4 py-4 text-lg font-semibold text-gray-800 hover:bg-green-50 border-b border-gray-100"
             onClick={() => setIsOpen(false)}
           >
             Contact
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

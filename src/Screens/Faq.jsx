@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'react-feather';
+import { Link } from 'react-router-dom';
 
 function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -110,16 +111,16 @@ function Faq() {
             Our spice experts are ready to help you with any additional questions about our products, exports, or partnerships.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="/contact" className="inline-block">
+            <Link to="/contact" className="inline-block">
               <button className="bg-yellow-500 text-[#022c22] hover:bg-yellow-400 font-bold px-8 py-3 rounded-full shadow-lg transition-all duration-300 text-lg hover:scale-105 transform">
                 Contact Us
               </button>
-            </a>
-            <a href="/product" className="inline-block">
+            </Link>
+            <Link to="/product" className="inline-block">
               <button className="bg-transparent border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500/10 font-semibold px-8 py-3 rounded-full transition-all duration-300 text-lg hover:scale-105 transform">
                 View Products
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

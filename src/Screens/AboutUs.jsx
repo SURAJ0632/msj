@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Masala from "../assets/spiceAbout.png";
 import Sir from "../assets/sir.png";
 
@@ -198,7 +199,6 @@ export default function AboutUs() {
       </section>
 
       {/* Section 3: Mission & Vision */}
-      {/* Section 3: Mission & Vision */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
         {/* Mission */}
         <div className="bg-[#022c22] rounded-2xl overflow-hidden shadow-xl border-2 border-yellow-500 h-full flex flex-col">
@@ -353,16 +353,16 @@ export default function AboutUs() {
             authentic, premium quality spices that transform every dish.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="/products" className="inline-block">
+            <Link to="/products" className="inline-block">
               <button className="bg-yellow-500 text-[#022c22] hover:bg-yellow-400 font-bold px-8 py-3 rounded-full shadow-lg transition-all duration-300 text-lg hover:scale-105 transform">
                 Explore Our Products
               </button>
-            </a>
-            <a href="/contact" className="inline-block">
+            </Link>
+            <Link to="/contact" className="inline-block">
               <button className="bg-transparent border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500/10 font-semibold px-8 py-3 rounded-full transition-all duration-300 text-lg hover:scale-105 transform">
                 Connect With Us
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Facebook,
   Instagram,
@@ -37,33 +38,33 @@ function Footer() {
             </p>
 
             <div className="flex space-x-3">
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="bg-green-800 hover:bg-yellow-500 p-2 rounded-full transition-all duration-300 hover:text-green-900"
               >
                 <Facebook
                   size={18}
                   className="text-white hover:text-green-900"
                 />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="bg-green-800 hover:bg-yellow-500 p-2 rounded-full transition-all duration-300 hover:text-green-900"
               >
                 <Instagram
                   size={18}
                   className="text-white hover:text-green-900"
                 />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="bg-green-800 hover:bg-yellow-500 p-2 rounded-full transition-all duration-300 hover:text-green-900"
               >
                 <Twitter
                   size={18}
                   className="text-white hover:text-green-900"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -83,13 +84,13 @@ function Footer() {
                 { name: "Privacy Policy", href: "/privacy-policy" },
               ].map((link, i) => (
                 <li key={i}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="hover:text-yellow-400 transition-colors duration-300 flex items-center"
                   >
                     <ChevronRight className="w-3 h-3 mr-2 text-yellow-500" />
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -155,14 +156,6 @@ function Footer() {
                 </button>
               </div>
             </form>
-            {/* <a
-              href="/catalogue.pdf"
-              download="MSJ_Masale_Catalogue.pdf"
-              className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-green-900 px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium"
-            >
-              <Download className="w-4 h-4 mr-1" />
-              Download Catalogue
-            </a> */}
           </div>
         </div>
 
@@ -174,12 +167,12 @@ function Footer() {
           </div>
 
           <div className="flex space-x-4">
-            <a
-              href="/privacy-policy"
+            <Link
+              to="/privacy-policy"
               className="text-gray-400 hover:text-yellow-400 text-xs transition-colors"
             >
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>

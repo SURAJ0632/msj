@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Banner from "../assets/MSJ.png";
 import About from "../assets/spiceAbout.png";
 import Turmeric from "../assets/turmeric.png";
@@ -54,7 +55,7 @@ export default function HomePage() {
               crafted with generations of expertise.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3">
-              <a href="/product" className="inline-block">
+              <Link to="/product" className="inline-block">
                 <button className="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-8 py-3 rounded-full shadow-xl transition-all duration-300 transform hover:scale-105 group text-base">
                   Explore Our Collection
                   <svg
@@ -71,8 +72,8 @@ export default function HomePage() {
                     ></path>
                   </svg>
                 </button>
-              </a>
-              <a href="/about-us" className="inline-block">
+              </Link>
+              <Link to="/about-us" className="inline-block">
                 <button className="border-2 border-white hover:border-yellow-400 text-white hover:text-yellow-400 font-medium px-8 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 group text-base">
                   Our Story
                   <svg
@@ -89,7 +90,7 @@ export default function HomePage() {
                     ></path>
                   </svg>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -228,7 +229,7 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <a href="/about-us">
+                <Link to="/about-us">
                   <button className="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-6 py-2.5 rounded-full shadow-md transition-all duration-300 transform hover:scale-105 flex items-center text-base">
                     Discover Our Story
                     <svg
@@ -245,8 +246,8 @@ export default function HomePage() {
                       ></path>
                     </svg>
                   </button>
-                </a>
-                <a href="/contact">
+                </Link>
+                <Link to="/contact">
                   <button className="border-2 border-white hover:border-yellow-400 text-white hover:text-yellow-400 font-medium px-6 py-2.5 rounded-full shadow-md transition-all duration-300 transform hover:scale-105 flex items-center text-base">
                     Contact Us
                     <svg
@@ -263,7 +264,7 @@ export default function HomePage() {
                       ></path>
                     </svg>
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -551,7 +552,7 @@ export default function HomePage() {
                   "Key ingredient in rubs and marinades",
                   "Adds heat to desserts and drinks",
                 ],
-                image: BlackPepper, // Replace with actual pepper image
+                image: BlackPepper,
               },
             ].map((product, index) => (
               <div
@@ -686,7 +687,7 @@ export default function HomePage() {
                   their culinary creations
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-3">
-                  <a href="/product">
+                  <Link to="/product">
                     <button className="bg-white hover:bg-gray-100 text-gray-900 font-semibold px-8 py-4 rounded-full shadow-md transition-all duration-300 text-sm flex items-center justify-center">
                       Shop All Products
                       <svg
@@ -703,8 +704,8 @@ export default function HomePage() {
                         ></path>
                       </svg>
                     </button>
-                  </a>
-                  <a href="/contact">
+                  </Link>
+                  <Link to="/contact">
                     <button className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-all duration-300 text-sm flex items-center justify-center">
                       Contact Our Team
                       <svg
@@ -721,7 +722,7 @@ export default function HomePage() {
                         ></path>
                       </svg>
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
