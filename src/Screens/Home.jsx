@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Banner from "../assets/MSJ.png";
+import Banner from "../assets/MSJ.mp4";
 import About from "../assets/spiceAbout.png";
 import Turmeric from "../assets/turmeric.png";
 import RedChilli from "../assets/redchilli.png";

@@ -76,8 +76,8 @@ function Faq() {
         {/* FAQ Accordion */}
         <div className="max-w-4xl mx-auto">
           {faqs.map((faq, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="mb-4 border-2 border-yellow-500 rounded-lg overflow-hidden transition-all duration-300"
             >
               <button
