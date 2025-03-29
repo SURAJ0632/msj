@@ -12,6 +12,18 @@ import {
 } from "lucide-react";
 
 function Footer() {
+  // Function to handle catalog download
+  const handleDownloadCatalog = () => {
+    // Assuming your catalog is named "MSJ_Spices_Catalog.pdf" in the public folder
+    const catalogUrl = "/catalogue.pdf";
+    const link = document.createElement("a");
+    link.href = catalogUrl;
+    link.download = "MSJ_Spices_Catalog.pdf"; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <footer
       className="bg-green-900 text-white pt-12 pb-8 relative overflow-hidden"
@@ -156,6 +168,15 @@ function Footer() {
                 </button>
               </div>
             </form>
+            
+            {/* Catalog Download Button */}
+            <button
+              onClick={handleDownloadCatalog}
+              className="w-full flex items-center justify-center gap-2 bg-green-800 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-all duration-300 border border-green-700 text-sm"
+            >
+              <Download className="w-4 h-4" />
+              Download Our Catalog
+            </button>
           </div>
         </div>
 
